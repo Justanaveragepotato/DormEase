@@ -1,3 +1,4 @@
+
 public abstract class User {
 
     private String userId;
@@ -23,6 +24,19 @@ public abstract class User {
 
     public String getUsername() {
         return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     // Login validation

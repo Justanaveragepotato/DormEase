@@ -1,0 +1,4 @@
+S001|Juan Dela Cruz|juan123|student123|BSIT|2nd Year|Double|101
+S002|Pedro Santos|pedro123|student123|BSCS|1st Year|Double|101
+S003|Ana Reyes|ana123|student123|BSIT|2nd Year|Double|Not Assigned
+S004|Maria Cruz|maria123|Student123|BSIT|1st Year|Single|102

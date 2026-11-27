@@ -1,0 +1,5 @@
+101|Double|2|true
+102|Single|1|true
+103|Shared|4|true
+104|Single|2|true
+105|Double|2|true
