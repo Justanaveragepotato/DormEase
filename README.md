@@ -51,6 +51,7 @@ DormEase addresses these problems by providing a centralized management system t
 
 - Unified login system for administrators and students.
 - Separate administrator and student dashboards.
+- Optional Java Swing graphical user interface with tables and an activity log.
 - Student registration, viewing, editing, and deletion.
 - Room registration, editing, deletion, and availability management.
 - Automatic room assignment based on preferred room type.
@@ -59,7 +60,7 @@ DormEase addresses these problems by providing a centralized management system t
 - Waiting list management using a FIFO queue.
 - Waiting list processing when rooms become available.
 - Student room transfer request submission.
-- Administrator approval and rejection of transfer requests.
+- Administrator approval and rejection of transfer requests, with pending requests shown by default and reviewed requests available through a "Show all requests" option.
 - Validation of room types, capacities, student IDs, usernames, and required fields.
 - Prevention of duplicate student IDs and usernames.
 - Prevention of duplicate pending transfer requests.
@@ -72,7 +73,7 @@ DormEase addresses these problems by providing a centralized management system t
 
 - **Programming Language:** Java
 - **JDK:** Java 17 or newer recommended
-- **Interface:** Console / Command-Line Interface
+- **Interface:** Console / Command-Line Interface and Java Swing GUI
 - **Data Storage:** Plain text files
   - `students.txt`
   - `rooms.txt`
@@ -125,6 +126,14 @@ Run the application:
 java Main
 ```
 
+To launch the graphical user interface instead:
+
+```bash
+java GuiMain
+```
+
+Both versions use the same managers and the same saved data files.
+
 ### C. Default Administrator Account
 
 The system includes a default administrator account:
@@ -167,11 +176,17 @@ Example:
 java -Ddormease.data="C:\path\to\data" Main
 ```
 
+The same property also works with the GUI:
+
+```bash
+java -Ddormease.data="C:\path\to\data" GuiMain
+```
+
 The folder will be created automatically if it does not exist.
 
 ## 11. Sample Screenshots
 
-Screenshots of the running application can be placed inside the `screenshots/` folder and referenced below.
+Screenshots of the running GUI can be placed inside the `screenshots/` folder and referenced below.
 
 ### Administrator Dashboard
 
@@ -187,7 +202,7 @@ Screenshots of the running application can be placed inside the `screenshots/` f
 
 ## 12. Known Limitations
 
-- The system is console-based and does not include a graphical user interface.
+- The GUI is a local Swing desktop interface, not a web or mobile application.
 - Passwords are stored in plain text in `students.txt`.
 - The default administrator account is currently hardcoded in `Main.java`.
 - Data is stored locally in text files instead of a database.
@@ -198,7 +213,7 @@ Screenshots of the running application can be placed inside the `screenshots/` f
 
 ## 13. Future Improvements
 
-- Develop a graphical user interface using Java Swing or JavaFX.
+- Add more GUI features such as sorting, filtering, and inline editing in tables.
 - Replace text-file storage with a database.
 - Implement password hashing instead of plain-text password storage.
 - Support multiple administrator accounts with configurable permissions.
