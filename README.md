@@ -45,8 +45,6 @@ DormEase addresses these problems by providing a centralized management system t
 
 - **Dormitory Administrators** — primary users responsible for managing student housing, room assignments, and transfer requests.
 - **Students** — users who can view their room information and submit transfer requests.
-- **Students on the Waiting List** — students waiting for a compatible room to become available.
-
 ## 6. Main Features
 
 - Unified login system for administrators and students.
